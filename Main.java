@@ -4,6 +4,7 @@ public class Main {//main class and static function declare
                 Scanner in = new Scanner(System.in);//input declare
                 int sec;int min;int  day;int year;//double  year;//varibales declare
                 sec=1/60;min = sec / 60;day = min /1440;year= sec / (60 * 60);sec=year*3;day= sec / (24 * 60 * 60);//variables declare
+                //new_approach
                 System.out.println ("Enter a number of seconds:");sec = in.nextInt();//user input printing
                 if (sec < 60) System.out.println ("The time entered is:" + sec + " seconds");//seconds'input cond
                 else if (sec >= 60 && year <= 3599&& min<1440) System.out.println ("The time entered is:" + min + "minutes and" +
@@ -11,7 +12,7 @@ public class Main {//main class and static function declare
                 else if (year >=1440 && year <= 85499) System.out.println ("The time entered is" + year + "year" + min+
                             "minutes and" + day + "days"+sec+"sec");}}//year input condition
 
-
+// old_approaches
 //sec=3*year;
 //seconds = 1/3.15;
 //day = min /1440;/
